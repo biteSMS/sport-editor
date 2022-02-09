@@ -1,4 +1,10 @@
 import { run } from "./src/main.js";
+import { Bot } from "@tenbot/bot";
+
+const bot = new Bot({
+  name: 'message-bot',
+  webhook: process.env.BOT_WEBHOOK;
+})
 
 const DEFAULT_STEP_SIZE = "5000-15000";
 
@@ -11,4 +17,6 @@ const config = {
   step_size: process.env.STED_SIZE_RANGE ?? DEFAULT_STEP_SIZE,
 };
 
-await run(config);
+const step = await run(config);
+const rtxName = process.env.RTXNAME
+bot.sendText({ content: `${rtxName}今日步数已更新: ${step}步` });
