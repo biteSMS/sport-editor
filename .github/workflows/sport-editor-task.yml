@@ -42,5 +42,7 @@ jobs:
           XIAOMI_AMAZFIT_USER_ID: ${{secrets.XIAOMI_AMAZFIT_USER_ID}}
           XIAOMI_AMAZFIT_APP_TOKEN: ${{secrets.XIAOMI_AMAZFIT_APP_TOKEN}}
           STED_SIZE_RANGE: ${{secrets.STED_SIZE_RANGE}}
+          BOT_WEBHOOK: ${{secrets.BOT_WEBHOOK}}
+          RTXNAME: ${{secrets.RTXNAME}}
 
         run: npm run start
