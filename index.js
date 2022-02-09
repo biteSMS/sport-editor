@@ -3,7 +3,7 @@ import { Bot } from "@tenbot/bot";
 
 const bot = new Bot({
   name: 'message-bot',
-  webhook: process.env.BOT_WEBHOOK;
+  webhook: process.env.BOT_WEBHOOK,
 })
 
 const DEFAULT_STEP_SIZE = "5000-15000";
