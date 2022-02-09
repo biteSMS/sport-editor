@@ -10,6 +10,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "@tenbot/bot": "^1.0.0-alpha.10",
     "axios": "^0.21.1",
     "dayjs": "^1.10.4"
   }
